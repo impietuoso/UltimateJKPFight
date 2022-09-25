@@ -487,6 +487,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643460439}
   m_CullTransparentMesh: 1
+--- !u!225 &966297978 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 4351466689385517257, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
+  m_PrefabInstance: {fileID: 5842340716475168928}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1070581190 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6770213898070684642, guid: 4c150987d5bd69e47884b443e9df5fd8, type: 3}
@@ -607,7 +612,7 @@ MonoBehaviour:
         m_MethodName: ShowCanvasGroup
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 966297978}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -823,7 +828,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.7
+  m_fontSize: 70.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1008,7 +1013,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.7
+  m_fontSize: 70.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1527,7 +1532,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.7
+  m_fontSize: 70.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1741,6 +1746,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4282009657448403607, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351466689385517257, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351466689385517257, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
+      propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388988843918182226, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
@@ -1991,6 +2004,10 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 575309081}
+    - target: {fileID: 8243677817518924100, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
 --- !u!114 &5842340716475168929 stripped
