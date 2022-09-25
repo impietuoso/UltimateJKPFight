@@ -189,7 +189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isThisMainMenu: 0
-  transitionDuration: 0
+  transitionDuration: 1.5
+  loadCG: {fileID: 6770213899605528194}
 --- !u!1 &6770213898940115854
 GameObject:
   m_ObjectHideFlags: 0

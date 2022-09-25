@@ -17,7 +17,10 @@ public class AudioManager : MonoBehaviour
     public float musicTransitionTime;
 
     void Awake() {
-        instance = this;
+        if (instance == null)
+            instance = this;
+        else Destroy(gameObject);
+
         DontDestroyOnLoad(this.gameObject);
     }
 
