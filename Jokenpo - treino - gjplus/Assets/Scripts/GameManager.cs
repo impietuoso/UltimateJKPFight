@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public float transitionDuration;
+    public float MenuTransitionDuration;
 
     public bool pausedGame;
     public bool beginGame;
@@ -20,18 +19,6 @@ public class GameManager : MonoBehaviour
 
     private void Start() {
 
-    }
-
-    public void LoadScene(int newScene) {
-        StartCoroutine(Load(newScene));
-    }
-
-    public IEnumerator Load(int newScene) {
-        yield return new WaitForSeconds(transitionDuration);
-        SceneManager.LoadSceneAsync(newScene);
-    }
-    public void ReloadScene() {
-        SceneManager.LoadSceneAsync(0);
     }
 
     public void BeginGame() {
@@ -65,8 +52,8 @@ public class GameManager : MonoBehaviour
     IEnumerator ShowCanvasGroupAlpha(CanvasGroup CG) {
         CG.blocksRaycasts = true;
         float currentTime = 0f;
-        while (currentTime < transitionDuration) {
-            CG.alpha = Mathf.Lerp(0, 1, currentTime / transitionDuration);
+        while (currentTime < MenuTransitionDuration) {
+            CG.alpha = Mathf.Lerp(0, 1, currentTime / MenuTransitionDuration);
             currentTime += Time.fixedDeltaTime;
             yield return null;
         }
@@ -85,8 +72,8 @@ public class GameManager : MonoBehaviour
     IEnumerator HideCanvasGroupAplha(CanvasGroup CG) {
         CG.blocksRaycasts = false;
         float currentTime = 0f;
-        while (currentTime < transitionDuration) {
-            CG.alpha = Mathf.Lerp(1, 0, currentTime / transitionDuration);
+        while (currentTime < MenuTransitionDuration) {
+            CG.alpha = Mathf.Lerp(1, 0, currentTime / MenuTransitionDuration);
             currentTime += Time.fixedDeltaTime;
             yield return null;
         }
