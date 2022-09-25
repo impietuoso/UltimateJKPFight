@@ -5,6 +5,12 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     string[] lista_Jogadas = new string[3];
+    public static Player Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Update()
     {
         // pedra -> R (rock)
@@ -45,15 +51,15 @@ public class Player : MonoBehaviour
         }
     }
 
-    string PrimeiraPosicao()
+    public string PrimeiraPosicao()
     {
         return lista_Jogadas[0];
     }
-    string SegundaPosicao()
+    public string SegundaPosicao()
     {
         return lista_Jogadas[1];
     }
-    string TerceiraPosicao()
+    public string TerceiraPosicao()
     {
         return lista_Jogadas[3];
     }
