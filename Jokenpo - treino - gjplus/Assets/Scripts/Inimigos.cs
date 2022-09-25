@@ -10,11 +10,28 @@ public class Inimigos : MonoBehaviour
     string[] lista_Jogadas = new string[3];
     string[] jogada = new string[3];
 
+    public static Inimigos Instance;
+    private void Awake()
+    {
+        if (Inimigos.Instance == null)
+        {
+            Instance = this;
+        }
+        else {
+            Destroy(Inimigos.Instance);
+        }
+
+    }
     void Start()
     {
         lista_Jogadas[0] = Jogadas.Instance.PrimeiraJogada(id);
         lista_Jogadas[1] = Jogadas.Instance.SegundoJogada(id);
         lista_Jogadas[2] = Jogadas.Instance.TerceiraJogada(id);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K)) Sequencia();
     }
 
     public void Sequencia() {
@@ -38,14 +55,14 @@ public class Inimigos : MonoBehaviour
         }
     }
 
-    string PrimeiraPosicao() {
+    public string PrimeiraPosicao() {
         return jogada[0];
     }
-    string SegundaPosicao()
+    public string SegundaPosicao()
     {
         return jogada[1];
     }
-    string TerceiraPosicao()
+    public string TerceiraPosicao()
     {
         return jogada[3];
     }
