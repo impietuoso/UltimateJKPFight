@@ -8,14 +8,30 @@ public class LoadManager : MonoBehaviour
     public static LoadManager instance;
     public bool isThisMainMenu;
     public float transitionDuration;
+    public CanvasGroup loadCG;
 
     private void Awake() {
         instance = this;
+        AjustLoadScreen();
     }
 
     private void Start() {
-        if (isThisMainMenu)
-            GameManager.instance.HideCanvasGroup(this.GetComponent<CanvasGroup>());
+        if (!isThisMainMenu)
+            GameManager.instance.HideCanvasGroup(loadCG);
+    }
+
+    public void AjustLoadScreen() {
+        if (!isThisMainMenu) {
+            if (!loadCG.blocksRaycasts)
+                loadCG.blocksRaycasts = true;
+            if (loadCG.alpha != 1)
+                loadCG.alpha = 1;
+        } else {
+            if (loadCG.blocksRaycasts)
+                loadCG.blocksRaycasts = false;
+            if (loadCG.alpha == 1)
+                loadCG.alpha = 0;
+        }
     }
 
     public void LoadScene(int newScene) {
@@ -23,6 +39,7 @@ public class LoadManager : MonoBehaviour
     }
 
     public IEnumerator Load(int newScene) {
+        GameManager.instance.ShowCanvasGroup(loadCG);
         yield return new WaitForSeconds(transitionDuration);
         SceneManager.LoadSceneAsync(newScene);
     }
