@@ -1,0 +1,1776 @@
+fileFormatVersion: 2
+guid: d8bf09c5618999849ad9b5e7b96571c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5228508624644709988
+    second: UI_GameJamTreining__0
+  - first:
+      213: -2450481115321080421
+    second: UI_GameJamTreining__1
+  - first:
+      213: -6515228743160709956
+    second: UI_GameJamTreining__2
+  - first:
+      213: 3821218579926035508
+    second: UI_GameJamTreining__3
+  - first:
+      213: -2690790343880321966
+    second: UI_GameJamTreining__4
+  - first:
+      213: -3655184241421636366
+    second: UI_GameJamTreining__5
+  - first:
+      213: 597757772856495211
+    second: UI_GameJamTreining__6
+  - first:
+      213: 4388829612437666143
+    second: UI_GameJamTreining__7
+  - first:
+      213: -8341465844724261374
+    second: UI_GameJamTreining__8
+  - first:
+      213: -359320030558515878
+    second: UI_GameJamTreining__9
+  - first:
+      213: -1203858790583986891
+    second: UI_GameJamTreining__10
+  - first:
+      213: -8357909140065698179
+    second: UI_GameJamTreining__11
+  - first:
+      213: 9048394616954079025
+    second: UI_GameJamTreining__12
+  - first:
+      213: -4167272176612972069
+    second: UI_GameJamTreining__13
+  - first:
+      213: 4198411470737240141
+    second: Panel
+  - first:
+      213: 1395510506144641839
+    second: UI_GameJamTreining__15
+  - first:
+      213: 7121665581558242840
+    second: UI_GameJamTreining__16
+  - first:
+      213: -4910817762317123673
+    second: UI_GameJamTreining__17
+  - first:
+      213: -4015273931238634554
+    second: UI_GameJamTreining__18
+  - first:
+      213: 2040444584679288148
+    second: UI_GameJamTreining__19
+  - first:
+      213: 5093435649417752811
+    second: ConfigurationButton
+  - first:
+      213: -9128262253367452545
+    second: UI_GameJamTreining__21
+  - first:
+      213: -5854907321913364981
+    second: UI_GameJamTreining__22
+  - first:
+      213: 5606890947160237888
+    second: UI_GameJamTreining__23
+  - first:
+      213: -5558526690318741994
+    second: UI_GameJamTreining__24
+  - first:
+      213: 2975162076828874631
+    second: UI_GameJamTreining__25
+  - first:
+      213: 7324220886363389117
+    second: UI_GameJamTreining__26
+  - first:
+      213: -2694287593934082915
+    second: UI_GameJamTreining__27
+  - first:
+      213: 6926038966681476612
+    second: UI_GameJamTreining__28
+  - first:
+      213: -8791172809288658856
+    second: UI_GameJamTreining__29
+  - first:
+      213: -8359195172376138096
+    second: UI_GameJamTreining__30
+  - first:
+      213: -7566510016409040040
+    second: UI_GameJamTreining__31
+  - first:
+      213: 4359411680219955122
+    second: UI_GameJamTreining__32
+  - first:
+      213: 4080376294978226321
+    second: UI_GameJamTreining__33
+  - first:
+      213: 4351373824852277964
+    second: UI_GameJamTreining__34
+  - first:
+      213: -3579323272778886367
+    second: UI_GameJamTreining__35
+  - first:
+      213: -5312888314205503607
+    second: UI_GameJamTreining__36
+  - first:
+      213: 3136361741116656174
+    second: Button1
+  - first:
+      213: -8855581891802079737
+    second: UI_GameJamTreining__38
+  - first:
+      213: -7325493709182029996
+    second: UI_GameJamTreining__39
+  - first:
+      213: -1915164001886527139
+    second: UI_GameJamTreining__40
+  - first:
+      213: -1185767327087205761
+    second: UI_GameJamTreining__41
+  - first:
+      213: -806436006675334767
+    second: UI_GameJamTreining__42
+  - first:
+      213: -4523886409909841112
+    second: UI_GameJamTreining__43
+  - first:
+      213: -2708506510367656044
+    second: Button2
+  - first:
+      213: -4644409505650867981
+    second: UI_GameJamTreining__45
+  - first:
+      213: -2666741420093137732
+    second: UI_GameJamTreining__46
+  - first:
+      213: -2043303984212238721
+    second: UI_GameJamTreining__47
+  - first:
+      213: -6876325648647362519
+    second: UI_GameJamTreining__48
+  - first:
+      213: -2408927725015481531
+    second: UI_GameJamTreining__49
+  - first:
+      213: 1671572311275046871
+    second: UI_GameJamTreining__50
+  - first:
+      213: 9024312776807043790
+    second: UI_GameJamTreining__51
+  - first:
+      213: -8340341888819157381
+    second: UI_GameJamTreining__52
+  - first:
+      213: -8545207928336727570
+    second: ToggleCheck
+  - first:
+      213: 1126271924543482515
+    second: ToggleBackground
+  - first:
+      213: -871291791492382634
+    second: Button3
+  - first:
+      213: 314948786549079986
+    second: UI_GameJamTreining__56
+  - first:
+      213: 3107194238581279441
+    second: UI_GameJamTreining__57
+  - first:
+      213: -565538157973597581
+    second: UI_GameJamTreining__58
+  - first:
+      213: 2685183679386028694
+    second: UI_GameJamTreining__59
+  - first:
+      213: -5754564665969725930
+    second: UI_GameJamTreining__60
+  - first:
+      213: -326846782955570854
+    second: UI_GameJamTreining__61
+  - first:
+      213: 1870815513581715332
+    second: UI_GameJamTreining__62
+  - first:
+      213: 6885580957380442759
+    second: UI_GameJamTreining__63
+  - first:
+      213: 5526215892063281418
+    second: UI_GameJamTreining__64
+  - first:
+      213: -7094727502499485599
+    second: UI_GameJamTreining__65
+  - first:
+      213: 5946845961645666392
+    second: Logo
+  - first:
+      213: 4000735986004337382
+    second: UI_GameJamTreining__67
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_GameJamTreining__0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 483
+        width: 193
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c916cf29b1b9077b0800000000000000
+      internalID: -5228508624644709988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 462
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95eb78a8642efdd0800000000000000
+      internalID: -2450481115321080421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__2
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 488
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcbd7d2af14595a0800000000000000
+      internalID: -6515228743160709956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 437
+        width: 146
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c2d918d02b70530800000000000000
+      internalID: 3821218579926035508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 466
+        width: 181
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25456fb407468aad0800000000000000
+      internalID: -2690790343880321966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 457
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc25756c4d264dc0800000000000000
+      internalID: -3655184241421636366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 452
+        width: 181
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c07d00789ab4800800000000000000
+      internalID: 597757772856495211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 403
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59ff0d874148ec30800000000000000
+      internalID: 4388829612437666143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 404
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e182b52092d3c80800000000000000
+      internalID: -8341465844724261374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__9
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 404
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d80e10650730bf0800000000000000
+      internalID: -359320030558515878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__10
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 405
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535928beec80b4fe0800000000000000
+      internalID: -1203858790583986891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__11
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 403
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7eb4615bedb20c80800000000000000
+      internalID: -8357909140065698179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__12
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 419
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137ca13b6fa529d70800000000000000
+      internalID: 9048394616954079025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__13
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd96d96d800ea26c0800000000000000
+      internalID: -4167272176612972069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 388
+        width: 113
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40f73e0df0c34a30800000000000000
+      internalID: 4198411470737240141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 346
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23b31f5969dd5310800000000000000
+      internalID: 1395510506144641839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 349
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e97ed3d1d35d260800000000000000
+      internalID: 7121665581558242840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__17
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 349
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afb868834549dbb0800000000000000
+      internalID: -4910817762317123673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__18
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 350
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb82a422a1e648c0800000000000000
+      internalID: -4015273931238634554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__19
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 348
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dadadf98d115c10800000000000000
+      internalID: 2040444584679288148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConfigurationButton
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be03bd9acb48fa640800000000000000
+      internalID: 5093435649417752811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__21
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 319
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c1d6b18d5e15180800000000000000
+      internalID: -9128262253367452545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__22
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 345
+        width: 107
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e2584bfc03fbea0800000000000000
+      internalID: -5854907321913364981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__23
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 292
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047e6df1c9dafcd40800000000000000
+      internalID: 5606890947160237888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__24
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 292
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e060dec652cd2b0800000000000000
+      internalID: -5558526690318741994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__25
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 292
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78739925526e94920800000000000000
+      internalID: 2975162076828874631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__26
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 297
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcbf2c371cd4a560800000000000000
+      internalID: 7324220886363389117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__27
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 292
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c21d055b7fb9ad0800000000000000
+      internalID: -2694287593934082915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__28
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 311
+        width: 107
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e10959ebb3e1060800000000000000
+      internalID: 6926038966681476612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__29
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 242
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850d64758ea7ff580800000000000000
+      internalID: -8791172809288658856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__30
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 259
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e2c56974c2efb80800000000000000
+      internalID: -8359195172376138096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__31
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 262
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b018aaa3b5ef690800000000000000
+      internalID: -7566510016409040040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__32
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 259
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bff23573ddbf7c30800000000000000
+      internalID: 4359411680219955122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__33
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 274
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1980a1c1f9860a830800000000000000
+      internalID: 4080376294978226321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__34
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 275
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccab04b607f236c30800000000000000
+      internalID: 4351373824852277964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__35
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 273
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d9bd8270b35ec0800000000000000
+      internalID: -3579323272778886367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 277
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ff4742a34d446b0800000000000000
+      internalID: -5312888314205503607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button1
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 272
+        width: 109
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 4, z: 5, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a426ae268968b20800000000000000
+      internalID: 3136361741116656174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__38
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 257
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e51c33037aa1580800000000000000
+      internalID: -8855581891802079737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__39
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 258
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fa8db984e965a90800000000000000
+      internalID: -7325493709182029996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__40
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 256
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5120fcbc78fb65e0800000000000000
+      internalID: -1915164001886527139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__41
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 257
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72e3b206ee4b8fe0800000000000000
+      internalID: -1185767327087205761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__42
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 256
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199380089b6fec4f0800000000000000
+      internalID: -806436006675334767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__43
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 256
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8235b1d574de731c0800000000000000
+      internalID: -4523886409909841112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 236
+        width: 109
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497f3b9dda3796ad0800000000000000
+      internalID: -2708506510367656044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__45
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 228
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f08b38692ebb8fb0800000000000000
+      internalID: -4644409505650867981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__46
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 231
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc1783bec4ddfad0800000000000000
+      internalID: -2666741420093137732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__47
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 228
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e93ec2ad9b4a3e0800000000000000
+      internalID: -2043303984212238721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__48
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 241
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928677041426290a0800000000000000
+      internalID: -6876325648647362519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__49
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 240
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543ccd44ff4c19ed0800000000000000
+      internalID: -2408927725015481531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__50
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 225
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d78de5292e923710800000000000000
+      internalID: 1671572311275046871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__51
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 226
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec25a9b58accc3d70800000000000000
+      internalID: 9024312776807043790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__52
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 224
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76af9bbd37214c80800000000000000
+      internalID: -8340341888819157381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToggleCheck
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 211
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee143a3e9a2596980800000000000000
+      internalID: -8545207928336727570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToggleBackground
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 211
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ae8ee195251af00800000000000000
+      internalID: 1126271924543482515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 199
+        width: 109
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 4, z: 5, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65002606bbc88e3f0800000000000000
+      internalID: -871291791492382634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__56
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 195
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfb2b0b04cee5400800000000000000
+      internalID: 314948786549079986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__57
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 198
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da07c682b8fe1b20800000000000000
+      internalID: 3107194238581279441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__58
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 195
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3721e0baa0ec628f0800000000000000
+      internalID: -565538157973597581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__59
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 201
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a0b766450b34520800000000000000
+      internalID: 2685183679386028694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__60
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 202
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e2cdfdceda320b0800000000000000
+      internalID: -5754564665969725930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__61
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 200
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5934f5259ec67bf0800000000000000
+      internalID: -326846782955570854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__62
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 164
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ff35f2cc876f910800000000000000
+      internalID: 1870815513581715332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__63
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 167
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78afadc366f7e8f50800000000000000
+      internalID: 6885580957380442759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__64
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 164
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01ec8e131011bc40800000000000000
+      internalID: 5526215892063281418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__65
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 158
+        width: 193
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168e25b0de67a8d90800000000000000
+      internalID: -7094727502499485599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 75
+        width: 93
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8503bd5f4e0778250800000000000000
+      internalID: 5946845961645666392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_GameJamTreining__67
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 127
+        width: 193
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e229e5be28758730800000000000000
+      internalID: 4000735986004337382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
