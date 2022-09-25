@@ -32,7 +32,7 @@ public class Jogadas : MonoBehaviour
     public string SegundoJogada(int id)
     {
         string jogada = Jogadas_inimigos(id, 1);
-        return jogada; ;
+        return jogada; 
     }
 
     public string TerceiraJogada(int id)
