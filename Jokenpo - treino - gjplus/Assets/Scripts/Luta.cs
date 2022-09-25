@@ -7,12 +7,13 @@ public class Luta : MonoBehaviour
     string[] jogadas_player = new string[3];
     string[] jogadas_inimigo = new string[3];
     int contador = 0;
-    int idInimigo = Inimigos.Instance.id;
+    int idInimigo;
     float dano1 = 10, dano2 = 15, dano3 = 25;
     float multiplicador;
 
     private void Start()
     {
+        idInimigo = Inimigos.Instance.id;
         if (idInimigo == 0 || idInimigo == 1 || idInimigo == 2) multiplicador = 1;
         if (idInimigo == 3 || idInimigo == 4 || idInimigo == 5) multiplicador = 1.5f;
         if (idInimigo == 6 || idInimigo == 7 || idInimigo == 8) multiplicador = 1.8f;
