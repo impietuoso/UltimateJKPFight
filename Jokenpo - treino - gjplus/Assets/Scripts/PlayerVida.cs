@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerVida : MonoBehaviour
 {
-    public int vida = 100;
+    public float vida = 100;
 
     public static PlayerVida Instance;
     private void Awake()
