@@ -44,4 +44,17 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    string PrimeiraPosicao()
+    {
+        return lista_Jogadas[0];
+    }
+    string SegundaPosicao()
+    {
+        return lista_Jogadas[1];
+    }
+    string TerceiraPosicao()
+    {
+        return lista_Jogadas[3];
+    }
 }
