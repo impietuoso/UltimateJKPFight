@@ -1470,6 +1470,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 575309081}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: FadeMusic
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 7f08ddb1fa127d749b582cfa61f8215d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &643460443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4043,7 +4055,7 @@ PrefabInstance:
       objectReference: {fileID: 1531181222}
     - target: {fileID: 6770213898070684642, guid: 4c150987d5bd69e47884b443e9df5fd8, type: 3}
       propertyPath: isThisMainMenu
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6770213898070684642, guid: 4c150987d5bd69e47884b443e9df5fd8, type: 3}
       propertyPath: transitionDuration
