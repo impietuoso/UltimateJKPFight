@@ -27,9 +27,6 @@ public class Player : MonoBehaviour
                 break;
             }
         }
-        Debug.Log(lista_Jogadas[0]);
-        Debug.Log(lista_Jogadas[1]);
-        Debug.Log(lista_Jogadas[2]);
     }
     void PressP()
     {
@@ -41,9 +38,6 @@ public class Player : MonoBehaviour
                 break;
             }
         }
-        Debug.Log(lista_Jogadas[0]);
-        Debug.Log(lista_Jogadas[1]);
-        Debug.Log(lista_Jogadas[2]);
     }
     void PressS()
     {
@@ -55,9 +49,6 @@ public class Player : MonoBehaviour
                 break;
             }
         }
-        Debug.Log(lista_Jogadas[0]);
-        Debug.Log(lista_Jogadas[1]);
-        Debug.Log(lista_Jogadas[2]);
     }
 
     public string PrimeiraPosicao()
