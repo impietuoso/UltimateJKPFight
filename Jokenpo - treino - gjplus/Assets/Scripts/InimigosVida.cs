@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InimigosVida : MonoBehaviour
 {
-    public int vida = 100;
+    public float vida = 100;
 
     public static InimigosVida Instance;
     private void Awake()
@@ -14,8 +14,8 @@ public class InimigosVida : MonoBehaviour
 
     private void Update()
     {
-        if (vida <= 0) Perdeu();
+        if (vida <= 0) Ganhou();
     }
 
-    private void Perdeu() { }
+    private void Ganhou() { }
 }

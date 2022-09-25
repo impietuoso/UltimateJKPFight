@@ -8,7 +8,20 @@ public class Luta : MonoBehaviour
     string[] jogadas_inimigo = new string[3];
     int contador = 0;
     int idInimigo = Inimigos.Instance.id;
-    int dano1 = 10, dano2 = 15, dano3 = 20;
+    float dano1 = 10, dano2 = 15, dano3 = 25;
+    float multiplicador;
+
+    private void Start()
+    {
+        if (idInimigo == 0 || idInimigo == 1 || idInimigo == 2) multiplicador = 1;
+        if (idInimigo == 3 || idInimigo == 4 || idInimigo == 5) multiplicador = 1.5f;
+        if (idInimigo == 6 || idInimigo == 7 || idInimigo == 8) multiplicador = 1.8f;
+        if (idInimigo == 9) multiplicador = 2;
+
+        dano1 *= multiplicador;
+        dano2 *= multiplicador;
+        dano3 *= multiplicador;
+    }
     public void Fight() {
         jogadas_player[0] = Player.Instance.PrimeiraPosicao();
         jogadas_player[1] = Player.Instance.SegundaPosicao();
@@ -46,16 +59,21 @@ public class Luta : MonoBehaviour
      }
 
     private void ProximoRound() {
+        contador = 0;
         Inimigos.Instance.Sequencia();
     }
 
     private void DanoNoInimigo() {
         contador++;
         if(contador == 1) InimigosVida.Instance.vida -= dano1;
+        if(contador == 2) InimigosVida.Instance.vida -= dano2;
+        if (contador == 3) InimigosVida.Instance.vida -= dano3;
     }
     private void DanoNoPlayer() {
         contador++;
-        PlayerVida.Instance.vida -= 10;
+        if (contador == 1) PlayerVida.Instance.vida -= dano1;
+        if (contador == 2) PlayerVida.Instance.vida -= dano2;
+        if (contador == 3) PlayerVida.Instance.vida -= dano3;
     }
     private void Empate() { }
 }
