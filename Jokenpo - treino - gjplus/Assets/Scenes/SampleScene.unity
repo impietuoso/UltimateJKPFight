@@ -391,7 +391,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.85
+  m_fontSize: 38.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -614,8 +614,9 @@ GameObject:
   - component: {fileID: 432129395}
   - component: {fileID: 432129394}
   - component: {fileID: 432129396}
+  - component: {fileID: 432129397}
   m_Layer: 0
-  m_Name: Jogadas
+  m_Name: BackEnd
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -641,7 +642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432129393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.591, y: 1.366, z: -0.039489917}
+  m_LocalPosition: {x: -0.17, y: 1.366, z: -0.039489917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -659,13 +660,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdb5618b4b359642ae66063b420683f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jogada1: {fileID: 0}
-  jogada2: {fileID: 0}
-  jogada3: {fileID: 0}
-  pedra: {fileID: -4644409505650867981, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
-  papel: {fileID: -2043303984212238721, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
-  tesoura: {fileID: -2666741420093137732, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
-  interrogacao: {fileID: -4523886409909841112, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  jogada1: {fileID: 471474949}
+  jogada2: {fileID: 625573183}
+  jogada3: {fileID: 1348224640}
+  pedra: {fileID: 1870815513581715332, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  papel: {fileID: 5526215892063281418, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  tesoura: {fileID: 6885580957380442759, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  interrogacao: {fileID: -806436006675334767, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+--- !u!114 &432129397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432129393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d2dcdd59be71b47868928ba12fde82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &451164133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519764913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.045, y: 0.646, z: 0}
+  m_LocalPosition: {x: 1.88, y: 0.646, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1705,6 +1718,7 @@ GameObject:
   - component: {fileID: 736954806}
   - component: {fileID: 736954805}
   - component: {fileID: 736954804}
+  - component: {fileID: 736954807}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1783,12 +1797,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736954803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.51, y: 0.64, z: 0}
+  m_LocalPosition: {x: -2.33, y: 0.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736954807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736954803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffd81cbb6dd32148b47d3cd9b2a0258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jogada1: {fileID: 688911028}
+  jogada2: {fileID: 1161298903}
+  jogada3: {fileID: 1103819523}
+  pedra: {fileID: 1870815513581715332, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  papel: {fileID: 5526215892063281418, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  tesoura: {fileID: 6885580957380442759, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  interrogacao: {fileID: -806436006675334767, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
 --- !u!1 &770574338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1912,30 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 352c31edf4b17bf4fb71e94c1f408ef4, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 736954804}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: PressR
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 736954807}
+        m_TargetAssemblyTypeName: MostrarJogadaPlayer, Assembly-CSharp
+        m_MethodName: PegarJogadas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2091,6 +2148,30 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 352c31edf4b17bf4fb71e94c1f408ef4, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 736954804}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: PressP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 736954807}
+        m_TargetAssemblyTypeName: MostrarJogadaPlayer, Assembly-CSharp
+        m_MethodName: PegarJogadas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2649,6 +2730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6770213898070684641, guid: 4c150987d5bd69e47884b443e9df5fd8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6770213898070684642, guid: 4c150987d5bd69e47884b443e9df5fd8, type: 3}
       propertyPath: loadCG
       value: 
@@ -3164,6 +3249,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 736954804}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: PressS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 736954807}
+        m_TargetAssemblyTypeName: MostrarJogadaPlayer, Assembly-CSharp
+        m_MethodName: PegarJogadas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1482071098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3399,7 +3508,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.45
+  m_fontSize: 31.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3554,7 +3663,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.85
+  m_fontSize: 38.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4671,6 +4780,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 903043859985345965, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1055803569382458453, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4697,11 +4810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1285430146877978001, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1285430146877978001, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1646890994619375966, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4905,27 +5018,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816991571033240505, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4816991571033240505, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4816991571033240505, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1727.9999
       objectReference: {fileID: 0}
     - target: {fileID: 4816991571033240505, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 161.79997
       objectReference: {fileID: 0}
     - target: {fileID: 4816991571033240505, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 863.99994
       objectReference: {fileID: 0}
     - target: {fileID: 4816991571033240505, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -454.49994
       objectReference: {fileID: 0}
     - target: {fileID: 4975063433889129109, guid: 03f5ede57a761de408ec23640dbbc456, type: 3}
       propertyPath: m_Pivot.x
