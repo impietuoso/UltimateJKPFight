@@ -13,6 +13,9 @@ public class Luta : MonoBehaviour
 
     private void Start()
     {
+        Inimigos.Instance.Sequencia();
+        EsconderJogada.Instance.PegarJogadas();
+
         idInimigo = Inimigos.Instance.id;
         if (idInimigo == 0 || idInimigo == 1 || idInimigo == 2) multiplicador = 1;
         if (idInimigo == 3 || idInimigo == 4 || idInimigo == 5) multiplicador = 1.5f;
@@ -62,6 +65,7 @@ public class Luta : MonoBehaviour
     private void ProximoRound() {
         contador = 0;
         Inimigos.Instance.Sequencia();
+        EsconderJogada.Instance.PegarJogadas();
     }
 
     private void DanoNoInimigo() {

@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P)) PressP();
         if (Input.GetKeyDown(KeyCode.S)) PressS();
     }
-    void PressR() {
+    public void PressR() {
         for (int a = 0; a < 3; a++) {
             if (lista_Jogadas[a] == null) {
                 lista_Jogadas[a] = "pedra";
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
             }
         }
     }
-    void PressP()
+    public void PressP()
     {
         for (int a = 0; a < 3; a++)
         {
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
             }
         }
     }
-    void PressS()
+    public void PressS()
     {
         for (int a = 0; a < 3; a++)
         {
@@ -61,6 +61,6 @@ public class Player : MonoBehaviour
     }
     public string TerceiraPosicao()
     {
-        return lista_Jogadas[3];
+        return lista_Jogadas[2];
     }
 }

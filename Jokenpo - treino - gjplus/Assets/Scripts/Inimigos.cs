@@ -20,19 +20,11 @@ public class Inimigos : MonoBehaviour
         else {
             Destroy(Inimigos.Instance);
         }
-
-    }
-    void Start()
-    {
         lista_Jogadas[0] = Jogadas.Instance.PrimeiraJogada(id);
         lista_Jogadas[1] = Jogadas.Instance.SegundoJogada(id);
         lista_Jogadas[2] = Jogadas.Instance.TerceiraJogada(id);
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K)) Sequencia();
-    }
+ 
 
     public void Sequencia() {
 
@@ -64,7 +56,7 @@ public class Inimigos : MonoBehaviour
     }
     public string TerceiraPosicao()
     {
-        return jogada[3];
+        return jogada[2];
     }
 
 }

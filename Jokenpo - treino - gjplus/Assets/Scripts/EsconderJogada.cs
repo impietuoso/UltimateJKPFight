@@ -10,6 +10,13 @@ public class EsconderJogada : MonoBehaviour
     public Image jogada1,jogada2,jogada3;
     public Sprite pedra,papel,tesoura,interrogacao;
 
+    public static EsconderJogada Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
         idInimigo = Inimigos.Instance.id;
@@ -52,9 +59,7 @@ public class EsconderJogada : MonoBehaviour
         }
     }
 
-
-
-    void PegarJogadas() {
+    public void PegarJogadas() {
         switch (Inimigos.Instance.PrimeiraPosicao())
         {
             case "pedra":
