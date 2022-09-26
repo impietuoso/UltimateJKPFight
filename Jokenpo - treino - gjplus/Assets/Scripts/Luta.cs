@@ -142,7 +142,7 @@ public class Luta : MonoBehaviour {
         if (jogadas_player[0] == "tesoura") Tesoura(0);
         Player.Instance.anim.Play(jogadas_player[0]);
         Inimigos.Instance.anim.Play(jogadas_inimigo[0]);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         Player.Instance.ShowAttackBubble(false, 0);
         Inimigos.Instance.ShowAttackBubble(false, 0);
         Player.Instance.anim.Play("Attack");
@@ -153,7 +153,7 @@ public class Luta : MonoBehaviour {
         if (jogadas_player[1] == "tesoura") Tesoura(1);
         Player.Instance.anim.Play(jogadas_player[1]);
         Inimigos.Instance.anim.Play(jogadas_inimigo[1]);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         Player.Instance.ShowAttackBubble(false, 0);
         Inimigos.Instance.ShowAttackBubble(false, 0);
         Player.Instance.anim.Play("Attack");
@@ -164,7 +164,7 @@ public class Luta : MonoBehaviour {
         if (jogadas_player[2] == "tesoura") Tesoura(2);
         Player.Instance.anim.Play(jogadas_player[2]);
         Inimigos.Instance.anim.Play(jogadas_inimigo[2]);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         Player.Instance.ShowAttackBubble(false, 0);
         Inimigos.Instance.ShowAttackBubble(false, 0);
         Player.Instance.anim.Play("Idle");

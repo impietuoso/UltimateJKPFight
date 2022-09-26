@@ -16,6 +16,7 @@ public class InimigosVida : MonoBehaviour
 
     public TextMeshProUGUI gameOverText;
     public CanvasGroup gameOverPanel;
+    public AudioClip cleanStageAudio;
 
     public static InimigosVida Instance;
     private void Awake()
@@ -39,6 +40,7 @@ public class InimigosVida : MonoBehaviour
             GameManager.instance.ShowCanvasGroup(gameOverPanel);
             gameOverText.text = "You have WON";
         } else {
+            AudioManager.instance.PlaySound(cleanStageAudio);
             Inimigos.Instance.id += 1;
             GameManager.instance.ShowCanvasGroup(nextEnemyPanel);
         }

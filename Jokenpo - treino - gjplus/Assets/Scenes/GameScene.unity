@@ -2280,6 +2280,7 @@ MonoBehaviour:
   enemyCount: 10
   gameOverText: {fileID: 648409603}
   gameOverPanel: {fileID: 1568888099}
+  cleanStageAudio: {fileID: 8300000, guid: 3c670bdb648c8674a909bddec1607997, type: 3}
 --- !u!1 &548083043
 GameObject:
   m_ObjectHideFlags: 0
@@ -5446,6 +5447,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6770213897867939024, guid: 4c150987d5bd69e47884b443e9df5fd8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.9999695
+      objectReference: {fileID: 0}
     - target: {fileID: 6770213898070684641, guid: 4c150987d5bd69e47884b443e9df5fd8, type: 3}
       propertyPath: m_Name
       value: LoadCanvas
