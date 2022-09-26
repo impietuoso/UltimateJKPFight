@@ -4,16 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -5228508624644709988
-    second: UI_GameJamTreining__0
+    second: Slider
   - first:
       213: -2450481115321080421
-    second: UI_GameJamTreining__1
+    second: VSIcon
   - first:
       213: -6515228743160709956
     second: UI_GameJamTreining__2
   - first:
       213: 3821218579926035508
-    second: UI_GameJamTreining__3
+    second: SliderBG
   - first:
       213: -2690790343880321966
     second: UI_GameJamTreining__4
@@ -67,7 +67,7 @@ TextureImporter:
     second: ConfigurationButton
   - first:
       213: -9128262253367452545
-    second: UI_GameJamTreining__21
+    second: Bubble
   - first:
       213: -5854907321913364981
     second: UI_GameJamTreining__22
@@ -94,37 +94,37 @@ TextureImporter:
     second: UI_GameJamTreining__29
   - first:
       213: -8359195172376138096
-    second: UI_GameJamTreining__30
+    second: Rock G
   - first:
       213: -7566510016409040040
-    second: UI_GameJamTreining__31
+    second: Scissors G
   - first:
       213: 4359411680219955122
-    second: UI_GameJamTreining__32
+    second: Paper G
   - first:
       213: 4080376294978226321
-    second: UI_GameJamTreining__33
+    second: Rock P
   - first:
       213: 4351373824852277964
-    second: UI_GameJamTreining__34
+    second: Scissors P
   - first:
       213: -3579323272778886367
-    second: UI_GameJamTreining__35
+    second: Paper P
   - first:
       213: -5312888314205503607
-    second: UI_GameJamTreining__36
+    second: SquarePanel
   - first:
       213: 3136361741116656174
     second: Button1
   - first:
       213: -8855581891802079737
-    second: UI_GameJamTreining__38
+    second: Rock P Blue Outline
   - first:
       213: -7325493709182029996
-    second: UI_GameJamTreining__39
+    second: Scissors P Blue Outline
   - first:
       213: -1915164001886527139
-    second: UI_GameJamTreining__40
+    second: Paper P Blue Outline
   - first:
       213: -1185767327087205761
     second: UI_GameJamTreining__41
@@ -139,13 +139,13 @@ TextureImporter:
     second: Button2
   - first:
       213: -4644409505650867981
-    second: UI_GameJamTreining__45
+    second: RockG Blue Outline
   - first:
       213: -2666741420093137732
-    second: UI_GameJamTreining__46
+    second: Scissors G Blue Outline
   - first:
       213: -2043303984212238721
-    second: UI_GameJamTreining__47
+    second: Paper G Blue Outline
   - first:
       213: -6876325648647362519
     second: UI_GameJamTreining__48
@@ -154,13 +154,13 @@ TextureImporter:
     second: UI_GameJamTreining__49
   - first:
       213: 1671572311275046871
-    second: UI_GameJamTreining__50
+    second: Rock P Outline
   - first:
       213: 9024312776807043790
-    second: UI_GameJamTreining__51
+    second: Scissors P Outline
   - first:
       213: -8340341888819157381
-    second: UI_GameJamTreining__52
+    second: Paper Outline
   - first:
       213: -8545207928336727570
     second: ToggleCheck
@@ -172,55 +172,55 @@ TextureImporter:
     second: Button3
   - first:
       213: 314948786549079986
-    second: UI_GameJamTreining__56
+    second: Rock G Outline
   - first:
       213: 3107194238581279441
-    second: UI_GameJamTreining__57
+    second: Scissors G Outline
   - first:
       213: -565538157973597581
-    second: UI_GameJamTreining__58
+    second: Paper G Outline
   - first:
       213: 2685183679386028694
-    second: UI_GameJamTreining__59
+    second: Rock P Black Outline
   - first:
       213: -5754564665969725930
-    second: UI_GameJamTreining__60
+    second: Scissors P Black Outline
   - first:
       213: -326846782955570854
-    second: UI_GameJamTreining__61
+    second: Paper P Black Outline
   - first:
       213: 1870815513581715332
-    second: UI_GameJamTreining__62
+    second: Rock G Black Outline
   - first:
       213: 6885580957380442759
-    second: UI_GameJamTreining__63
+    second: Scissors G Black Outline
   - first:
       213: 5526215892063281418
-    second: UI_GameJamTreining__64
+    second: Paper G Black Outline
   - first:
       213: -7094727502499485599
-    second: UI_GameJamTreining__65
+    second: White Bar
   - first:
       213: 5946845961645666392
     second: Logo
   - first:
       213: 4000735986004337382
-    second: UI_GameJamTreining__67
+    second: Green Bar
   - first:
       213: 1937492687453173151
-    second: UI_GameJamTreining__68
+    second: GO
   - first:
       213: 439370790010628659
-    second: UI_GameJamTreining__69
+    second: ButtonPressed
   - first:
       213: 941000950940913115
-    second: UI_GameJamTreining__70
+    second: ButtonDisable
   - first:
       213: 2206709742055629139
-    second: UI_GameJamTreining__71
+    second: ButtonHighlited
   - first:
       213: -5163283460175635453
-    second: UI_GameJamTreining__72
+    second: ButtonNormal
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -346,7 +346,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_GameJamTreining__0
+      name: Slider
       rect:
         serializedVersion: 2
         x: 8
@@ -367,7 +367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__1
+      name: VSIcon
       rect:
         serializedVersion: 2
         x: 242
@@ -409,7 +409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__3
+      name: SliderBG
       rect:
         serializedVersion: 2
         x: 358
@@ -425,27 +425,6 @@ TextureImporter:
       bones: []
       spriteID: 43c2d918d02b70530800000000000000
       internalID: 3821218579926035508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_GameJamTreining__4
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 466
-        width: 181
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25456fb407468aad0800000000000000
-      internalID: -2690790343880321966
       vertices: []
       indices: 
       edges: []
@@ -467,27 +446,6 @@ TextureImporter:
       bones: []
       spriteID: 2fc25756c4d264dc0800000000000000
       internalID: -3655184241421636366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_GameJamTreining__6
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 452
-        width: 181
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6c07d00789ab4800800000000000000
-      internalID: 597757772856495211
       vertices: []
       indices: 
       edges: []
@@ -787,7 +745,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__21
+      name: Bubble
       rect:
         serializedVersion: 2
         x: 287
@@ -934,7 +892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__30
+      name: Rock G
       rect:
         serializedVersion: 2
         x: 70
@@ -955,7 +913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__31
+      name: Scissors G
       rect:
         serializedVersion: 2
         x: 104
@@ -976,7 +934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__32
+      name: Paper G
       rect:
         serializedVersion: 2
         x: 134
@@ -997,7 +955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__33
+      name: Rock P
       rect:
         serializedVersion: 2
         x: 178
@@ -1018,7 +976,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__34
+      name: Scissors P
       rect:
         serializedVersion: 2
         x: 194
@@ -1039,7 +997,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__35
+      name: Paper P
       rect:
         serializedVersion: 2
         x: 208
@@ -1060,7 +1018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__36
+      name: SquarePanel
       rect:
         serializedVersion: 2
         x: 260
@@ -1081,7 +1039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__38
+      name: Rock P Blue Outline
       rect:
         serializedVersion: 2
         x: 177
@@ -1102,7 +1060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__39
+      name: Scissors P Blue Outline
       rect:
         serializedVersion: 2
         x: 194
@@ -1123,7 +1081,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__40
+      name: Paper P Blue Outline
       rect:
         serializedVersion: 2
         x: 208
@@ -1207,7 +1165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__45
+      name: RockG Blue Outline
       rect:
         serializedVersion: 2
         x: 69
@@ -1228,7 +1186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__46
+      name: Scissors G Blue Outline
       rect:
         serializedVersion: 2
         x: 103
@@ -1249,7 +1207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__47
+      name: Paper G Blue Outline
       rect:
         serializedVersion: 2
         x: 133
@@ -1270,49 +1228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__48
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 241
-        width: 5
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 928677041426290a0800000000000000
-      internalID: -6876325648647362519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_GameJamTreining__49
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 240
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 543ccd44ff4c19ed0800000000000000
-      internalID: -2408927725015481531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_GameJamTreining__50
+      name: Rock P Outline
       rect:
         serializedVersion: 2
         x: 177
@@ -1333,7 +1249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__51
+      name: Scissors P Outline
       rect:
         serializedVersion: 2
         x: 194
@@ -1354,7 +1270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__52
+      name: Paper Outline
       rect:
         serializedVersion: 2
         x: 208
@@ -1417,7 +1333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__56
+      name: Rock G Outline
       rect:
         serializedVersion: 2
         x: 67
@@ -1438,7 +1354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__57
+      name: Scissors G Outline
       rect:
         serializedVersion: 2
         x: 101
@@ -1459,7 +1375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__58
+      name: Paper G Outline
       rect:
         serializedVersion: 2
         x: 131
@@ -1480,7 +1396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__59
+      name: Rock P Black Outline
       rect:
         serializedVersion: 2
         x: 177
@@ -1501,7 +1417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__60
+      name: Scissors P Black Outline
       rect:
         serializedVersion: 2
         x: 194
@@ -1522,7 +1438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__61
+      name: Paper P Black Outline
       rect:
         serializedVersion: 2
         x: 208
@@ -1543,7 +1459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__62
+      name: Rock G Black Outline
       rect:
         serializedVersion: 2
         x: 66
@@ -1564,7 +1480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__63
+      name: Scissors G Black Outline
       rect:
         serializedVersion: 2
         x: 100
@@ -1585,7 +1501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__64
+      name: Paper G Black Outline
       rect:
         serializedVersion: 2
         x: 130
@@ -1606,7 +1522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__65
+      name: White Bar
       rect:
         serializedVersion: 2
         x: 282
@@ -1648,7 +1564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__67
+      name: Green Bar
       rect:
         serializedVersion: 2
         x: 282
@@ -1669,7 +1585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__68
+      name: GO
       rect:
         serializedVersion: 2
         x: 29
@@ -1677,7 +1593,7 @@ TextureImporter:
         width: 67
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1690,7 +1606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__69
+      name: ButtonPressed
       rect:
         serializedVersion: 2
         x: 117
@@ -1698,7 +1614,7 @@ TextureImporter:
         width: 113
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1711,7 +1627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__70
+      name: ButtonDisable
       rect:
         serializedVersion: 2
         x: 247
@@ -1719,7 +1635,7 @@ TextureImporter:
         width: 113
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1732,7 +1648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__71
+      name: ButtonHighlited
       rect:
         serializedVersion: 2
         x: 378
@@ -1740,7 +1656,7 @@ TextureImporter:
         width: 113
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1753,7 +1669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameJamTreining__72
+      name: ButtonNormal
       rect:
         serializedVersion: 2
         x: 163
@@ -1761,7 +1677,7 @@ TextureImporter:
         width: 113
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
