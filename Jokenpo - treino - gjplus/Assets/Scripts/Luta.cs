@@ -119,12 +119,12 @@ public class Luta : MonoBehaviour
         
         yield return new WaitForSeconds(2);
         
-        ProximoRound();
         ResetUI();
         fightButton.interactable = true;
     }
     
-    private void ResetUI() {
+    public void ResetUI() {
+        ProximoRound();
         jogada1.sprite = interrogacao;
         jogada2.sprite = interrogacao;
         jogada3.sprite = interrogacao;

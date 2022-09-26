@@ -19,5 +19,8 @@ public class InimigosVida : MonoBehaviour
 
     private void Ganhou() {
         // GANHOU A PARTIDA
+        // CHAMAR TELA DE GANHOU E PERGUNTAR SE QUER IR PARA A PRÓXIMA LUTA
+        Inimigos.Instance.id += 1;
+        vida = 100 + Inimigos.Instance.id * 10;
     }
 }
