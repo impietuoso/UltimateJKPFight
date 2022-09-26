@@ -18,7 +18,7 @@ public class PlayerVida : MonoBehaviour
     }
 
     private void Perdeu() {
-        // PERDEU A PARTIDA
-        // TELA DE PERDEU O JOGO E JOGAR NOVAMENTWE OU VOLTAR PARA O MENU INICIAL
+        InimigosVida.Instance.activeEnemy = false;
+        InimigosVida.Instance.PlayerLose();
     }
 }

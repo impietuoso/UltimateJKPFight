@@ -14,6 +14,8 @@ public class AudioManager : MonoBehaviour
     public Toggle bgmToggle;
     public Toggle sfxToggle;
 
+    public CanvasGroup target;
+
     public float musicTransitionTime;
 
     void Awake() {
@@ -150,5 +152,29 @@ public class AudioManager : MonoBehaviour
         } else {
             bgmAS.volume = bgmAS.volume * 2;
         }
+    }
+
+    public void EnterOptions(CanvasGroup target) {
+        GameManager.instance.ShowCanvasGroup(this.GetComponentInChildren<CanvasGroup>());
+        if (target != null)
+            GameManager.instance.HideCanvasGroup(target);
+    }
+
+    public void CloseOptions() {
+        if(target != null) {
+            ExitOptions(target);
+        } else {
+            ExitOptions();
+        }
+    }
+
+    public void ExitOptions(CanvasGroup target) {
+        GameManager.instance.HideCanvasGroup(this.GetComponentInChildren<CanvasGroup>());
+        if (target != null)
+            GameManager.instance.ShowCanvasGroup(target);
+    }
+
+    public void ExitOptions() {
+        GameManager.instance.HideCanvasGroup(this.GetComponentInChildren<CanvasGroup>());
     }
 }

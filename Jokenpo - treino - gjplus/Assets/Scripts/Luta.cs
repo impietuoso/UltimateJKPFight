@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Luta : MonoBehaviour
-{
+public class Luta : MonoBehaviour {
     string[] jogadas_player = new string[3];
     string[] jogadas_inimigo = new string[3];
     int contador = 0;
@@ -18,12 +17,10 @@ public class Luta : MonoBehaviour
     public Sprite interrogacao;
 
     public AudioClip goAudio;
-    public AudioClip selectAttackAudio;
-    public AudioClip confirmButtonAudio;
+    public AudioClip selectAudio;
+    public Animator goIcon;
 
-    private void Start()
-    {
-
+    private void Start() {
         idInimigo = Inimigos.Instance.id;
         Inimigos.Instance.Sequencia();
         EsconderJogada.Instance.PegarJogadas();
@@ -36,48 +33,69 @@ public class Luta : MonoBehaviour
         dano1 *= multiplicador;
         dano2 *= multiplicador;
         dano3 *= multiplicador;
+        Invoke("Go", 1f);
+    }
 
-        AudioManager.instance.PlaySound(goAudio);
+    public void ActiveFightButton() {
+        if (Player.Instance.lista_Jogadas[0] != "" && Player.Instance.lista_Jogadas[1] != "" && Player.Instance.lista_Jogadas[2] != "")
+            fightButton.interactable = true;
+    }
+
+    void Go() {
+        if (InimigosVida.Instance.activeEnemy) {
+            AudioManager.instance.PlaySound(goAudio);
+            goIcon.Play("Go");
+        }
     }
 
     public void Fight() {
         if (Player.Instance.lista_Jogadas[0] != "" && Player.Instance.lista_Jogadas[1] != "" && Player.Instance.lista_Jogadas[2] != "") {
             StartCoroutine(FightCorroutine());
-        }        
+        }
     }
 
     private void Pedra(int turno) {
+        Player.Instance.ShowAttackBubble(true, 0);
         if (jogadas_inimigo[turno] == "pedra") Empate();
         else if (jogadas_inimigo[turno] == "papel") DanoNoPlayer();
         else if (jogadas_inimigo[turno] == "tesoura") DanoNoInimigo();
+        AjustEnemyBubbleIcon(turno);
     }
 
-    private void Papel(int turno)
-    {
+    private void Papel(int turno) {
+        Player.Instance.ShowAttackBubble(true, 1);
         if (jogadas_inimigo[turno] == "pedra") DanoNoInimigo();
         else if (jogadas_inimigo[turno] == "papel") Empate();
         else if (jogadas_inimigo[turno] == "tesoura") DanoNoPlayer();
+        AjustEnemyBubbleIcon(turno);
     }
 
-    private void Tesoura(int turno)
-    {
+    private void Tesoura(int turno) {
+        Player.Instance.ShowAttackBubble(true, 2);
         if (jogadas_inimigo[turno] == "pedra") DanoNoPlayer();
         else if (jogadas_inimigo[turno] == "papel") DanoNoInimigo();
         else if (jogadas_inimigo[turno] == "tesoura") Empate();
-     }
+        AjustEnemyBubbleIcon(turno);
+    }
+
+    void AjustEnemyBubbleIcon(int turno) {
+        if (jogadas_inimigo[turno] == "pedra") Inimigos.Instance.ShowAttackBubble(true, 0);
+        else if (jogadas_inimigo[turno] == "papel") Inimigos.Instance.ShowAttackBubble(true, 1);
+        else if (jogadas_inimigo[turno] == "tesoura") Inimigos.Instance.ShowAttackBubble(true, 2);
+    }
 
     private void ProximoRound() {
         contador = 0;
         Inimigos.Instance.Sequencia();
         EsconderJogada.Instance.PegarJogadas();
         // ANIMAÇÃO PROXIMO ROUD / COMEÇAR DE NOVO
-        AudioManager.instance.PlaySound(goAudio);
+        Go();
     }
 
     private void DanoNoInimigo() {
         contador++;
-        if(contador == 1) InimigosVida.Instance.vida -= dano1;
-        if(contador == 2) InimigosVida.Instance.vida -= dano2;
+        if (contador == 1) InimigosVida.Instance.vida -= dano1;
+        if (contador == 2) InimigosVida.Instance.vida -= dano2;
         if (contador == 3) InimigosVida.Instance.vida -= dano3;
         slider_vida_inimigo.value = InimigosVida.Instance.vida;
         Invoke("EnemyDamageAnim", 0.2f);
@@ -97,10 +115,11 @@ public class Luta : MonoBehaviour
         if (contador == 2) PlayerVida.Instance.vida -= dano2;
         if (contador == 3) PlayerVida.Instance.vida -= dano3;
         slider_vida_player.value = PlayerVida.Instance.vida;
+        AudioManager.instance.PlaySound(selectAudio);
         Invoke("PlayerDamageAnim", 0.2f);
     }
     private void Empate() {
-        // ANIMAÇÃO EMPATE
+        AudioManager.instance.PlaySound(selectAudio);
     }
 
     public IEnumerator FightCorroutine() {
@@ -124,6 +143,8 @@ public class Luta : MonoBehaviour
         Player.Instance.anim.Play(jogadas_player[0]);
         Inimigos.Instance.anim.Play(jogadas_inimigo[0]);
         yield return new WaitForSeconds(0.5f);
+        Player.Instance.ShowAttackBubble(false, 0);
+        Inimigos.Instance.ShowAttackBubble(false, 0);
         Player.Instance.anim.Play("Attack");
         Inimigos.Instance.anim.Play("Attack");
         yield return new WaitForSeconds(0.3f);
@@ -133,6 +154,8 @@ public class Luta : MonoBehaviour
         Player.Instance.anim.Play(jogadas_player[1]);
         Inimigos.Instance.anim.Play(jogadas_inimigo[1]);
         yield return new WaitForSeconds(0.5f);
+        Player.Instance.ShowAttackBubble(false, 0);
+        Inimigos.Instance.ShowAttackBubble(false, 0);
         Player.Instance.anim.Play("Attack");
         Inimigos.Instance.anim.Play("Attack");
         yield return new WaitForSeconds(0.3f);
@@ -142,15 +165,15 @@ public class Luta : MonoBehaviour
         Player.Instance.anim.Play(jogadas_player[2]);
         Inimigos.Instance.anim.Play(jogadas_inimigo[2]);
         yield return new WaitForSeconds(0.5f);
+        Player.Instance.ShowAttackBubble(false, 0);
+        Inimigos.Instance.ShowAttackBubble(false, 0);
         Player.Instance.anim.Play("Idle");
         Inimigos.Instance.anim.Play("Idle");
         ResetUI();
         ProximoRound();
-        yield return new WaitForSeconds(1.5f);
-        fightButton.interactable = true;
     }
-    
-    private void ResetUI() {
+
+    public void ResetUI() {
         jogada1.sprite = interrogacao;
         jogada2.sprite = interrogacao;
         jogada3.sprite = interrogacao;
@@ -158,4 +181,12 @@ public class Luta : MonoBehaviour
         Player.Instance.lista_Jogadas[1] = "";
         Player.Instance.lista_Jogadas[2] = "";
     }
+
+    public void NextEnemy() {
+        if (InimigosVida.Instance.vida > slider_vida_inimigo.maxValue)
+            slider_vida_inimigo.maxValue = InimigosVida.Instance.vida;
+        slider_vida_inimigo.value = InimigosVida.Instance.vida;
+        Go();
+    }
+
 }

@@ -14,11 +14,14 @@ public class Inimigos : MonoBehaviour
     public AudioClip attackAudio;
     public AudioClip takeDamageAudio;
 
+    public SpriteRenderer attackIcon;
+    public Sprite[] choiceSprite;
+    public GameObject bubble;
+
     public static Inimigos Instance;
     private void Awake()
     {
-        if (Inimigos.Instance == null)
-        {
+        if (Inimigos.Instance == null) {
             Instance = this;
         }
         else {
@@ -27,6 +30,13 @@ public class Inimigos : MonoBehaviour
         lista_Jogadas[0] = Jogadas.Instance.PrimeiraJogada(id);
         lista_Jogadas[1] = Jogadas.Instance.SegundoJogada(id);
         lista_Jogadas[2] = Jogadas.Instance.TerceiraJogada(id);
+    }
+
+    public void ShowAttackBubble(bool state, int sprite) {
+        bubble.SetActive(state);
+        if (state == true) {
+            attackIcon.sprite = choiceSprite[sprite];
+        }
     }
 
     public void PlayTakeDamageAudio() {

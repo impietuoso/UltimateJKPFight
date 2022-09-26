@@ -38,6 +38,10 @@ public class LoadManager : MonoBehaviour
         StartCoroutine(Load(newScene));
     }
 
+    public void ReturnToMenu(AudioClip c) {
+        AudioManager.instance.FadeMusic(c);
+    }
+
     public IEnumerator Load(int newScene) {
         GameManager.instance.ShowCanvasGroup(loadCG);
         yield return new WaitForSeconds(transitionDuration);

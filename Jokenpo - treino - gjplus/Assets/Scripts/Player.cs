@@ -10,12 +10,23 @@ public class Player : MonoBehaviour
     public AudioClip attackAudio;
     public AudioClip takeDamageAudio;
 
+    public SpriteRenderer attackIcon;
+    public Sprite[] choiceSprite;
+    public GameObject bubble;
+
     public void PlayTakeDamageAudio() {
         AudioManager.instance.PlaySound(takeDamageAudio);
     }
 
     public void PlayAttackAudio() {
         AudioManager.instance.PlaySound(attackAudio);
+    }
+
+    public void ShowAttackBubble(bool state, int sprite) {
+        bubble.SetActive(state);
+        if(state == true) {
+            attackIcon.sprite = choiceSprite[sprite];
+        }
     }
 
     private void Awake()
@@ -48,8 +59,7 @@ public class Player : MonoBehaviour
             }
         }
     }
-    public void PressP()
-    {
+    public void PressP() {
         for (int a = 0; a < 3; a++)
         {
             if (lista_Jogadas[a] == "")
@@ -60,8 +70,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void PressS()
-    {
+    public void PressS() {
         for (int a = 0; a < 3; a++)
         {
             if (lista_Jogadas[a] == "")
