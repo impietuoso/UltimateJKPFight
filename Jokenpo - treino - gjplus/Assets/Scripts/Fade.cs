@@ -12,6 +12,10 @@ public class Fade : MonoBehaviour
     
     public static Fade instance;
 
+    public AudioClip fightSceneAudio;
+    public AudioClip writeAudio;
+    public AudioClip endDialogueAudio;
+
     private void Awake()
     {
         instance = this;
@@ -48,10 +52,15 @@ public class Fade : MonoBehaviour
         foreach (char letter in sentence.ToCharArray()) 
         {
             text.text += letter;
+            if (writeAudio != null)
+                AudioManager.instance.PlaySound(writeAudio);
             yield return new WaitForSeconds(0.1f);
         }
+        if (endDialogueAudio != null)
+            AudioManager.instance.PlaySound(endDialogueAudio);
         yield return new WaitForSeconds(3f);
         LoadManager.instance.LoadScene(2);
+        AudioManager.instance.FadeMusic(fightSceneAudio);
     }
 
 }

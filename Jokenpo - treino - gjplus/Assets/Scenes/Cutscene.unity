@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 1244124135}
   - component: {fileID: 1244124134}
   m_Layer: 5
-  m_Name: PanalText
+  m_Name: PanelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -452,6 +452,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1542376988}
+  fightSceneAudio: {fileID: 8300000, guid: 94335d28c37c14840861f85b294f155f, type: 3}
+  writeAudio: {fileID: 8300000, guid: 352c31edf4b17bf4fb71e94c1f408ef4, type: 3}
+  endDialogueAudio: {fileID: 8300000, guid: f2987b2dc83158e41ac9540e6072d040, type: 3}
 --- !u!1 &1492945683
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +593,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -607,12 +610,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 32
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 36
+  m_fontSizeMax: 32
   m_fontStyle: 0
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
