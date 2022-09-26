@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Luta : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Luta : MonoBehaviour
     int idInimigo;
     float dano1 = 10, dano2 = 15, dano3 = 25;
     float multiplicador;
+    public Slider slider_vida_player;
+    public Slider slider_vida_inimigo;
 
     private void Start()
     {
@@ -73,12 +76,14 @@ public class Luta : MonoBehaviour
         if(contador == 1) InimigosVida.Instance.vida -= dano1;
         if(contador == 2) InimigosVida.Instance.vida -= dano2;
         if (contador == 3) InimigosVida.Instance.vida -= dano3;
+        slider_vida_inimigo.value = InimigosVida.Instance.vida;
     }
     private void DanoNoPlayer() {
         contador++;
         if (contador == 1) PlayerVida.Instance.vida -= dano1;
         if (contador == 2) PlayerVida.Instance.vida -= dano2;
         if (contador == 3) PlayerVida.Instance.vida -= dano3;
+        slider_vida_player.value = PlayerVida.Instance.vida;
     }
     private void Empate() { }
 }
