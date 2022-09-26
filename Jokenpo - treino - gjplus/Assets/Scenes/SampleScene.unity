@@ -466,7 +466,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.15
+  m_fontSize: 38.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -689,8 +689,10 @@ GameObject:
   - component: {fileID: 432129395}
   - component: {fileID: 432129394}
   - component: {fileID: 432129396}
+  - component: {fileID: 432129398}
+  - component: {fileID: 432129397}
   m_Layer: 0
-  m_Name: Jogadas
+  m_Name: BackEnd
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -716,7 +718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432129393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.591, y: 1.366, z: -0.039489917}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -734,12 +736,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdb5618b4b359642ae66063b420683f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jogada1: {fileID: 0}
-  jogada2: {fileID: 0}
-  jogada3: {fileID: 0}
-  pedra: {fileID: -4644409505650867981, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
-  papel: {fileID: -2043303984212238721, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
-  tesoura: {fileID: -2666741420093137732, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  jogada1: {fileID: 471474949}
+  jogada2: {fileID: 625573183}
+  jogada3: {fileID: 1348224640}
+  pedra: {fileID: 1870815513581715332, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  papel: {fileID: 5526215892063281418, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  tesoura: {fileID: 6885580957380442759, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  interrogacao: {fileID: -4523886409909841112, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+--- !u!114 &432129397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432129393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d2dcdd59be71b47868928ba12fde82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider_vida_player: {fileID: 735319021}
+  slider_vida_inimigo: {fileID: 1815167580}
+  fightButton: {fileID: 496591384}
+  jogada1: {fileID: 688911028}
+  jogada2: {fileID: 1161298903}
+  jogada3: {fileID: 1103819523}
+  interrogacao: {fileID: -4523886409909841112, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+--- !u!114 &432129398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432129393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffd81cbb6dd32148b47d3cd9b2a0258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jogada1: {fileID: 688911028}
+  jogada2: {fileID: 1161298903}
+  jogada3: {fileID: 1103819523}
+  pedra: {fileID: 1870815513581715332, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  papel: {fileID: 5526215892063281418, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  tesoura: {fileID: 6885580957380442759, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
   interrogacao: {fileID: -4523886409909841112, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
 --- !u!225 &442320636 stripped
 CanvasGroup:
@@ -1123,7 +1163,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 496591385}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 432129397}
+        m_TargetAssemblyTypeName: Luta, Assembly-CSharp
+        m_MethodName: Fight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &496591385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,6 +1419,7 @@ GameObject:
   - component: {fileID: 519764915}
   - component: {fileID: 519764914}
   - component: {fileID: 519764917}
+  - component: {fileID: 519764918}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Untagged
@@ -1471,6 +1524,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &519764918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519764913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239a98c3091a38e4a95a408db61b2e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 100
 --- !u!1 &579876980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,6 +2215,7 @@ GameObject:
   - component: {fileID: 736954805}
   - component: {fileID: 736954804}
   - component: {fileID: 736954807}
+  - component: {fileID: 736954809}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2168,6 +2235,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b073ca99ce23bb498076d9f3c7097a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lista_Jogadas:
+  - 
+  - 
+  - 
 --- !u!212 &736954805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2252,6 +2323,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &736954809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736954803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c26b9eb7d3602b46b8a2a070ae2eccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 100
 --- !u!1 &739112736
 GameObject:
   m_ObjectHideFlags: 3
@@ -2421,7 +2505,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 770574341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736954804}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: PressR
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 432129398}
+        m_TargetAssemblyTypeName: MostrarJogadaPlayer, Assembly-CSharp
+        m_MethodName: PegarJogadas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &770574341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2610,7 +2718,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 942644454}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736954804}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: PressP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 432129398}
+        m_TargetAssemblyTypeName: MostrarJogadaPlayer, Assembly-CSharp
+        m_MethodName: PegarJogadas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &942644454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3658,7 +3790,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.85
+  m_fontSize: 38.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3790,7 +3922,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1482071098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736954804}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: PressS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 432129398}
+        m_TargetAssemblyTypeName: MostrarJogadaPlayer, Assembly-CSharp
+        m_MethodName: PegarJogadas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1482071098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4335,7 +4491,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.45
+  m_fontSize: 31.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4490,7 +4646,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.1
+  m_fontSize: 38.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4998,7 +5154,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1676094885}
+  m_Follow: {fileID: 1895906068}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 4
@@ -5126,6 +5282,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878507248}
   m_CullTransparentMesh: 1
+--- !u!1 &1895906067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895906068}
+  m_Layer: 0
+  m_Name: Center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1895906068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895906067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1901775496
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class MostrarJogadaPlayer : MonoBehaviour
 
     public void PegarJogadas()
     {
+        // ANIMAÇÃO COMEÇAR PARTIDA
         switch (Player.Instance.PrimeiraPosicao())
         {
             case "pedra":

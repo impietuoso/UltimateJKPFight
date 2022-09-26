@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    string[] lista_Jogadas = new string[3];
+    public string[] lista_Jogadas = new string[3];
     public static Player Instance;
 
     private void Awake()
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     }
     public void PressR() {
         for (int a = 0; a < 3; a++) {
-            if (lista_Jogadas[a] == null) {
+            if (lista_Jogadas[a] == null || lista_Jogadas[a] == "") {
                 lista_Jogadas[a] = "pedra";
                 break;
             }
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     {
         for (int a = 0; a < 3; a++)
         {
-            if (lista_Jogadas[a] == null)
+            if (lista_Jogadas[a] == null || lista_Jogadas[a] == "")
             {
                 lista_Jogadas[a] = "papel";
                 break;
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     {
         for (int a = 0; a < 3; a++)
         {
-            if (lista_Jogadas[a] == null)
+            if (lista_Jogadas[a] == null || lista_Jogadas[a] == "")
             {
                 lista_Jogadas[a] = "tesoura";
                 break;

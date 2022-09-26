@@ -13,13 +13,21 @@ public class Luta : MonoBehaviour
     float multiplicador;
     public Slider slider_vida_player;
     public Slider slider_vida_inimigo;
+    public Button fightButton;
+    public Image jogada1, jogada2, jogada3;
+    public Sprite interrogacao;
 
+    private void Awake()
+    {
+        
+    }
     private void Start()
     {
+
+        idInimigo = Inimigos.Instance.id;
         Inimigos.Instance.Sequencia();
         EsconderJogada.Instance.PegarJogadas();
 
-        idInimigo = Inimigos.Instance.id;
         if (idInimigo == 0 || idInimigo == 1 || idInimigo == 2) multiplicador = 1;
         if (idInimigo == 3 || idInimigo == 4 || idInimigo == 5) multiplicador = 1.5f;
         if (idInimigo == 6 || idInimigo == 7 || idInimigo == 8) multiplicador = 1.8f;
@@ -28,23 +36,12 @@ public class Luta : MonoBehaviour
         dano1 *= multiplicador;
         dano2 *= multiplicador;
         dano3 *= multiplicador;
+        // ANIMAÇÃO COMEÇAR PARTIDA
     }
     public void Fight() {
-        jogadas_player[0] = Player.Instance.PrimeiraPosicao();
-        jogadas_player[1] = Player.Instance.SegundaPosicao();
-        jogadas_player[2] = Player.Instance.TerceiraPosicao();
 
-        jogadas_inimigo[0] = Inimigos.Instance.PrimeiraPosicao();
-        jogadas_inimigo[1] = Inimigos.Instance.SegundaPosicao();
-        jogadas_inimigo[2] = Inimigos.Instance.TerceiraPosicao();
-
-        for (int a = 0; a < 3; a++) { 
-            if (jogadas_player[a] == "pedra") Pedra(a);
-            else if (jogadas_player[a] == "papel") Papel(a);
-            else if (jogadas_player[a] == "tesoura") Tesoura(a);
-        }
-
-        ProximoRound();
+        StartCoroutine(FightCorroutine());
+        
     }
 
     private void Pedra(int turno) {
@@ -69,9 +66,11 @@ public class Luta : MonoBehaviour
         contador = 0;
         Inimigos.Instance.Sequencia();
         EsconderJogada.Instance.PegarJogadas();
+        // ANIMAÇÃO PROXIMO ROUD / COMEÇAR DE NOVO
     }
 
     private void DanoNoInimigo() {
+        // ANIMAÇÃO INIMIGO TOMANDO DANO
         contador++;
         if(contador == 1) InimigosVida.Instance.vida -= dano1;
         if(contador == 2) InimigosVida.Instance.vida -= dano2;
@@ -79,11 +78,58 @@ public class Luta : MonoBehaviour
         slider_vida_inimigo.value = InimigosVida.Instance.vida;
     }
     private void DanoNoPlayer() {
+        // ANIMAÇÃO PLAYER TOMANDO DANO
         contador++;
         if (contador == 1) PlayerVida.Instance.vida -= dano1;
         if (contador == 2) PlayerVida.Instance.vida -= dano2;
         if (contador == 3) PlayerVida.Instance.vida -= dano3;
         slider_vida_player.value = PlayerVida.Instance.vida;
     }
-    private void Empate() { }
+    private void Empate() {
+        // ANIMAÇÃO EMPATE
+    }
+
+    public IEnumerator FightCorroutine() {
+
+        fightButton.interactable = false;
+
+        jogadas_player[0] = Player.Instance.PrimeiraPosicao();
+        jogadas_player[1] = Player.Instance.SegundaPosicao();
+        jogadas_player[2] = Player.Instance.TerceiraPosicao();
+
+        jogadas_inimigo[0] = Inimigos.Instance.PrimeiraPosicao();
+        jogadas_inimigo[1] = Inimigos.Instance.SegundaPosicao();
+        jogadas_inimigo[2] = Inimigos.Instance.TerceiraPosicao();
+
+        // ANIMAÇÃO DANO 1
+        yield return new WaitForSeconds(1);
+        if (jogadas_player[0] == "pedra") Pedra(0);
+        if (jogadas_player[0] == "papel") Papel(0);
+        if (jogadas_player[0] == "tesoura") Tesoura(0);
+        // ANIMAÇÃO DANO 2
+        yield return new WaitForSeconds(1);
+        if (jogadas_player[1] == "pedra") Pedra(1);
+        if (jogadas_player[1] == "papel") Papel(1);
+        if (jogadas_player[1] == "tesoura") Tesoura(1);
+        // ANIMAÇÃO DANO 3
+        yield return new WaitForSeconds(1);
+        if (jogadas_player[2] == "pedra") Pedra(2);
+        if (jogadas_player[2] == "papel") Papel(2);
+        if (jogadas_player[2] == "tesoura") Tesoura(2);
+        
+        yield return new WaitForSeconds(2);
+        
+        ProximoRound();
+        ResetUI();
+        fightButton.interactable = true;
+    }
+    
+    private void ResetUI() {
+        jogada1.sprite = interrogacao;
+        jogada2.sprite = interrogacao;
+        jogada3.sprite = interrogacao;
+        Player.Instance.lista_Jogadas[0] = null;
+        Player.Instance.lista_Jogadas[1] = null;
+        Player.Instance.lista_Jogadas[2] = null;
+    }
 }

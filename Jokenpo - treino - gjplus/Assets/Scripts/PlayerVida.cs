@@ -17,5 +17,7 @@ public class PlayerVida : MonoBehaviour
         if (vida <= 0) Perdeu();
     }
 
-    private void Perdeu() { }
+    private void Perdeu() {
+        // PERDEU A PARTIDA
+    }
 }

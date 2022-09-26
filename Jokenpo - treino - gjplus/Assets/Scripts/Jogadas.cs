@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Jogadas : MonoBehaviour
 {
-    private string[,] lista_Jogadas = new string[4, 3] { 
+    private string[,] lista_Jogadas = new string[10, 3] { 
         {"pedra", "pedra", "pedra" }, 
         { "pedra", "papel", "tesoura" },
         { "papel", "papel", "tesoura" },
         { "tesoura", "pedra", "tesoura" },
+        { "papel", "pedra", "tesoura" },
+        { "tesoura", "papel", "tesoura" },
+        { "pedra", "pedra", "tesoura" },
+        { "pedra", "papel", "tesoura" },
+        { "papel", "pedra", "tesoura" },
+        { "tesoura", "pedra", "papel" },
     };
 
     public static Jogadas Instance;
