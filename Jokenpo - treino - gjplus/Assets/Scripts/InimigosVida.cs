@@ -7,6 +7,7 @@ public class InimigosVida : MonoBehaviour
     public float vida = 100;
 
     public static InimigosVida Instance;
+
     private void Awake()
     {
         Instance = this;
@@ -19,5 +20,6 @@ public class InimigosVida : MonoBehaviour
 
     private void Ganhou() {
         // GANHOU A PARTIDA
+        
     }
 }

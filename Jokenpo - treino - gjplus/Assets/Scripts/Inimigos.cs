@@ -10,6 +10,10 @@ public class Inimigos : MonoBehaviour
     string[] lista_Jogadas = new string[3];
     string[] jogada = new string[3];
 
+    public Animator anim;
+    public AudioClip attackAudio;
+    public AudioClip takeDamageAudio;
+
     public static Inimigos Instance;
     private void Awake()
     {
@@ -24,7 +28,14 @@ public class Inimigos : MonoBehaviour
         lista_Jogadas[1] = Jogadas.Instance.SegundoJogada(id);
         lista_Jogadas[2] = Jogadas.Instance.TerceiraJogada(id);
     }
- 
+
+    public void PlayTakeDamageAudio() {
+        AudioManager.instance.PlaySound(takeDamageAudio);
+    }
+
+    public void PlayAttackAudio() {
+        AudioManager.instance.PlaySound(attackAudio);
+    }
 
     public void Sequencia() {
 

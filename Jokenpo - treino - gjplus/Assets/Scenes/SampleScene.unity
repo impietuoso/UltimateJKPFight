@@ -466,7 +466,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.25
+  m_fontSize: 41.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -762,6 +762,9 @@ MonoBehaviour:
   jogada2: {fileID: 1161298903}
   jogada3: {fileID: 1103819523}
   interrogacao: {fileID: -4523886409909841112, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  goAudio: {fileID: 8300000, guid: 167a8858950ee8646b9ca8f59016a05c, type: 3}
+  selectAttackAudio: {fileID: 8300000, guid: 352c31edf4b17bf4fb71e94c1f408ef4, type: 3}
+  confirmButtonAudio: {fileID: 8300000, guid: 5fb2ecfa067e3234c8dd7a07ee2abc49, type: 3}
 --- !u!114 &432129398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1440,6 +1443,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  anim: {fileID: 519764917}
+  attackAudio: {fileID: 8300000, guid: a7fbdaf9fdbaaa142904bd65c36815c9, type: 3}
+  takeDamageAudio: {fileID: 8300000, guid: 85adb16a8d5be4347b0dc639b9c411ae, type: 3}
 --- !u!212 &519764915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2239,6 +2245,9 @@ MonoBehaviour:
   - 
   - 
   - 
+  anim: {fileID: 736954807}
+  attackAudio: {fileID: 8300000, guid: a7fbdaf9fdbaaa142904bd65c36815c9, type: 3}
+  takeDamageAudio: {fileID: 8300000, guid: 85adb16a8d5be4347b0dc639b9c411ae, type: 3}
 --- !u!212 &736954805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3790,7 +3799,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.15
+  m_fontSize: 45.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4056,6 +4065,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3092703371594051692, guid: cc748f789d62ddc49ad5e51bc04029da, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 94335d28c37c14840861f85b294f155f, type: 3}
     - target: {fileID: 3595638155789065451, guid: cc748f789d62ddc49ad5e51bc04029da, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4491,7 +4504,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.75
+  m_fontSize: 39.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4646,7 +4659,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.25
+  m_fontSize: 41.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

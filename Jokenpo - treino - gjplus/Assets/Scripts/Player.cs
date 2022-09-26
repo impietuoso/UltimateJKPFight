@@ -6,11 +6,31 @@ public class Player : MonoBehaviour
 {
     public string[] lista_Jogadas = new string[3];
     public static Player Instance;
+    public Animator anim;
+    public AudioClip attackAudio;
+    public AudioClip takeDamageAudio;
+
+    public void PlayTakeDamageAudio() {
+        AudioManager.instance.PlaySound(takeDamageAudio);
+    }
+
+    public void PlayAttackAudio() {
+        AudioManager.instance.PlaySound(attackAudio);
+    }
 
     private void Awake()
     {
         Instance = this;
+        anim = GetComponent<Animator>();
     }
+
+    private void Start() {
+
+        lista_Jogadas[0] = "";
+        lista_Jogadas[1] = "";
+        lista_Jogadas[2] = "";
+    }
+
     private void Update()
     {
         // pedra -> R (rock)
@@ -22,7 +42,7 @@ public class Player : MonoBehaviour
     }
     public void PressR() {
         for (int a = 0; a < 3; a++) {
-            if (lista_Jogadas[a] == null || lista_Jogadas[a] == "") {
+            if (lista_Jogadas[a] == "") {
                 lista_Jogadas[a] = "pedra";
                 break;
             }
@@ -32,18 +52,19 @@ public class Player : MonoBehaviour
     {
         for (int a = 0; a < 3; a++)
         {
-            if (lista_Jogadas[a] == null || lista_Jogadas[a] == "")
+            if (lista_Jogadas[a] == "")
             {
                 lista_Jogadas[a] = "papel";
                 break;
             }
         }
     }
+
     public void PressS()
     {
         for (int a = 0; a < 3; a++)
         {
-            if (lista_Jogadas[a] == null || lista_Jogadas[a] == "")
+            if (lista_Jogadas[a] == "")
             {
                 lista_Jogadas[a] = "tesoura";
                 break;
