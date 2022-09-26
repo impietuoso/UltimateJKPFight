@@ -17,5 +17,7 @@ public class InimigosVida : MonoBehaviour
         if (vida <= 0) Ganhou();
     }
 
-    private void Ganhou() { }
+    private void Ganhou() {
+        // GANHOU A PARTIDA
+    }
 }
