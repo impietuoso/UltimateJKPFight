@@ -15,11 +15,15 @@ public class Fade : MonoBehaviour
     public AudioClip fightSceneAudio;
     public AudioClip writeAudio;
     public AudioClip endDialogueAudio;
+    public AudioClip confirmAudio;
+    public AudioClip skipAudio;
+
 
     public int gameScene;
 
     bool canDialogue = true;
     public GameObject btnLoad;
+    public Button btnSkip;
 
     private void Awake()
     {
@@ -70,6 +74,7 @@ public class Fade : MonoBehaviour
             }
         }
         btnLoad.SetActive(true);
+        btnSkip.interactable = false;
         if (endDialogueAudio != null)
             AudioManager.instance.PlaySound(endDialogueAudio);
         yield return new WaitForSeconds(3f);
@@ -77,18 +82,21 @@ public class Fade : MonoBehaviour
     }
     
     public void LoadScene() {
+        AudioManager.instance.PlaySound(confirmAudio);
         LoadManager.instance.LoadScene(gameScene);
         AudioManager.instance.FadeMusic(fightSceneAudio);
     }
 
     public void Skip() {
+        AudioManager.instance.PlaySound(skipAudio);
         btnLoad.SetActive(true);
         canDialogue = false;
+        btnSkip.interactable = false;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) Skip();
+        if (Input.GetKeyDown(KeyCode.Space) && btnSkip.interactable) Skip();
     }
 
 }
