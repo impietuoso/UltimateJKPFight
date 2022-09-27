@@ -453,8 +453,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1542376988}
   fightSceneAudio: {fileID: 8300000, guid: 94335d28c37c14840861f85b294f155f, type: 3}
-  writeAudio: {fileID: 8300000, guid: 352c31edf4b17bf4fb71e94c1f408ef4, type: 3}
+  writeAudio: {fileID: 8300000, guid: 3188219426cd7534eb6b2e6e7a26bcc1, type: 3}
   endDialogueAudio: {fileID: 8300000, guid: f2987b2dc83158e41ac9540e6072d040, type: 3}
+  gameScene: 3
 --- !u!1 &1492945683
 GameObject:
   m_ObjectHideFlags: 0

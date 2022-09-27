@@ -17,6 +17,11 @@ public class GameManager : MonoBehaviour
 
     public CanvasGroup target;
 
+    public Sprite rock;
+    public Sprite paper;
+    public Sprite scissors;
+    public Sprite mistery;
+
     private void Awake() {
         instance = this;
     }
