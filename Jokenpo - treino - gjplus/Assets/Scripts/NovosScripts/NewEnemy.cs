@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class NewEnemy : MonoBehaviour
 {
@@ -36,15 +35,15 @@ public class NewEnemy : MonoBehaviour
         switch (atk) {
             case 1:
                 anim.Play("Rock");
-                bubbleSprite.sprite = GameManager.instance.rock;
+                bubbleSprite.sprite = GameManager.instance.rockG;
                 break;
             case 2:
                 anim.Play("Paper");
-                bubbleSprite.sprite = GameManager.instance.paper;
+                bubbleSprite.sprite = GameManager.instance.paperG;
                 break;
             case 3:
                 anim.Play("Scissors");
-                bubbleSprite.sprite = GameManager.instance.scissors;
+                bubbleSprite.sprite = GameManager.instance.scissorsG;
                 break;
         }
     }

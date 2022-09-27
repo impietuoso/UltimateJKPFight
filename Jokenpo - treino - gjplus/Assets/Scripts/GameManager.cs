@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     public Sprite paper;
     public Sprite scissors;
     public Sprite mistery;
+    public Sprite rockG;
+    public Sprite paperG;
+    public Sprite scissorsG;
 
     private void Awake() {
         instance = this;
