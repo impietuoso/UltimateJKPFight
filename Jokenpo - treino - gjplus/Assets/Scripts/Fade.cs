@@ -18,6 +18,9 @@ public class Fade : MonoBehaviour
 
     public int gameScene;
 
+    bool canDialogue = true;
+    public GameObject btnLoad;
+
     private void Awake()
     {
         instance = this;
@@ -47,7 +50,6 @@ public class Fade : MonoBehaviour
         string sentence = sentences.Dequeue();
         StartCoroutine(TypeSentence(sentence));
     }
-
     IEnumerator TypeSentence( string sentence) 
     {
         int count = 0;
@@ -60,13 +62,33 @@ public class Fade : MonoBehaviour
                 AudioManager.instance.PlaySound(writeAudio);
                 count = 0;
             }
-            yield return new WaitForSeconds(0.05f);
+            if (canDialogue) yield return new WaitForSeconds(0.05f);
+            else {
+                text.text = sentence;
+                Skip();
+                yield break; 
+            }
         }
+        btnLoad.SetActive(true);
         if (endDialogueAudio != null)
             AudioManager.instance.PlaySound(endDialogueAudio);
         yield return new WaitForSeconds(3f);
+
+    }
+    
+    public void LoadScene() {
         LoadManager.instance.LoadScene(gameScene);
         AudioManager.instance.FadeMusic(fightSceneAudio);
+    }
+
+    public void Skip() {
+        btnLoad.SetActive(true);
+        canDialogue = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) Skip();
     }
 
 }
