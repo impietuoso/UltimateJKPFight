@@ -41,6 +41,7 @@ public class FightManager : MonoBehaviour
         remainingEnemiesText.text = listOfEnemies.Count + " Enemies Left";
     }
 
+    //Call popup GO with sound
     public void Go() {
         if (fighting) {
             AudioManager.instance.PlaySound(goAudio);
@@ -48,8 +49,9 @@ public class FightManager : MonoBehaviour
         }
     }
 
+    //Instantiate new enemy and begin fight
     public void GenerateEnemy() {
-        if(listOfEnemies.Count > 0) {
+        if (listOfEnemies.Count > 0) {
             fighting = true;
             GameObject e = Instantiate(listOfEnemies.First(), enemySpawnPoint.position, Quaternion.identity, enemySpawnPoint);
             currentEnemy = e.GetComponent<NewEnemy>();
@@ -64,25 +66,34 @@ public class FightManager : MonoBehaviour
         }
     }
 
+    //Call fight comparison
     public void Fight() {
         if (fighting)
             StartCoroutine(FightCoroutine());
     }
 
+    //Disable fight button and disable cancel attacks
+    //Start Turns
+    //Each Turn:
+    //Attack Sound > Get Attacks > Attack Animations >  Wait > Compare Attacks > Wait
+    //End of Each Turn: If enemy is death stop fighting
     public IEnumerator FightCoroutine() {
 
         yield return new WaitForSeconds(0.2f);
+        //Sound
         AudioManager.instance.PlaySound(NewPlayer.instance.atkAudio);
         AudioManager.instance.PlaySound(currentEnemy.atkAudio);
+        //Disable Buttons
         NewPlayer.instance.FightButton.interactable = false;
         NewPlayer.instance.canCancelAttack = false;
-
+        //Get Attacks
         int playerAttack = NewPlayer.instance.attack[0];
         int enemyAttack = currentEnemy.attack[0];
+        //Attack Animations
         NewPlayer.instance.AttackAnimation(playerAttack);
         currentEnemy.AttackAnimation(enemyAttack);
         yield return new WaitForSeconds(0.5f);
-        //Calculando quem leva dano
+        //Compare Attacks
         if (playerAttack == 1 && enemyAttack == 1) Tie();
         else if (playerAttack == 1 && enemyAttack == 2) Defeat();
         else if (playerAttack == 1 && enemyAttack == 3) Win();
@@ -94,7 +105,7 @@ public class FightManager : MonoBehaviour
         else if (playerAttack == 3 && enemyAttack == 2) Win();
         yield return new WaitForSeconds(1f);
 
-        //Verificar se ganhei
+        //If Enemy is dead Stop Fight
         if (!fighting) {
             GenerateEnemy();
             NewPlayer.instance.canCancelAttack = true;
@@ -102,15 +113,17 @@ public class FightManager : MonoBehaviour
             yield break;
         }
 
-        //Animações de Ataque
+        //Sound
         AudioManager.instance.PlaySound(NewPlayer.instance.atkAudio);
         AudioManager.instance.PlaySound(currentEnemy.atkAudio);
+        //Get Attacks
         playerAttack = NewPlayer.instance.attack[1];
         enemyAttack = currentEnemy.attack[1];
+        //Attack Animations
         NewPlayer.instance.AttackAnimation(playerAttack);
         currentEnemy.AttackAnimation(enemyAttack);
         yield return new WaitForSeconds(0.5f);
-        //Calculando quem leva dano
+        //Compare Attacks
         if (playerAttack == 1 && enemyAttack == 1) Tie();
         else if (playerAttack == 1 && enemyAttack == 2) Defeat();
         else if (playerAttack == 1 && enemyAttack == 3) Win();
@@ -122,7 +135,7 @@ public class FightManager : MonoBehaviour
         else if (playerAttack == 3 && enemyAttack == 2) Win();
         yield return new WaitForSeconds(1f);
 
-        //Verificar se ganhei
+        //If Enemy is dead Stop Fight
         if (!fighting) {
             GenerateEnemy();
             NewPlayer.instance.canCancelAttack = true;
@@ -130,15 +143,17 @@ public class FightManager : MonoBehaviour
             yield break;
         }
 
-        //Animações de Ataque
+        //Sound
         AudioManager.instance.PlaySound(NewPlayer.instance.atkAudio);
         AudioManager.instance.PlaySound(currentEnemy.atkAudio);
+        //Get Attacks
         playerAttack = NewPlayer.instance.attack[2];
         enemyAttack = currentEnemy.attack[2];
+        //Attack Animations
         NewPlayer.instance.AttackAnimation(playerAttack);
         currentEnemy.AttackAnimation(enemyAttack);
         yield return new WaitForSeconds(0.5f);
-        //Calculando quem leva dano
+        //Compare Attacks
         if (playerAttack == 1 && enemyAttack == 1) Tie();
         else if (playerAttack == 1 && enemyAttack == 2) Defeat();
         else if (playerAttack == 1 && enemyAttack == 3) Win();
@@ -150,26 +165,30 @@ public class FightManager : MonoBehaviour
         else if (playerAttack == 3 && enemyAttack == 2) Win();
         yield return new WaitForSeconds(1f);
 
-        //Verificar se ganhei
+        //If Enemy is dead Call Next Enemy
         if (!fighting) {
             GenerateEnemy();
         }
 
+        //Ending Turns Setup next Turns Begin
         currentEnemy.SelectEnemyAttacks();
         NewPlayer.instance.canCancelAttack = true;
         NewPlayer.instance.ResetAttack();
         Go();
     }
 
+    //If win an combat do damage in enemy
     void Win() {
         currentEnemy.TakeDamage();
     }
 
+    //If lose an combat take damage from enemy and play sound
     void Defeat() {
         NewPlayer.instance.TakeDamage();
         AudioManager.instance.PlaySound(laughAudio);
     }
 
+    //If the result is an tie play sound
     void Tie() {
         AudioManager.instance.PlaySound(laughAudio);
     }
