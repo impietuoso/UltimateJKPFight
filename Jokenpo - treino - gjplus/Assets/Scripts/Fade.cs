@@ -25,6 +25,10 @@ public class Fade : MonoBehaviour
     public GameObject btnLoad;
     public Button btnSkip;
 
+    [Range(0,0.1f)]
+    public float dialogueLetterDelay;
+    public int lettersPerSound;
+
     private void Awake()
     {
         instance = this;
@@ -62,11 +66,11 @@ public class Fade : MonoBehaviour
         {
             text.text += letter;
             count++;
-            if (writeAudio != null && count == 3) {
+            if (writeAudio != null && count == lettersPerSound) {
                 AudioManager.instance.PlaySound(writeAudio);
                 count = 0;
             }
-            if (canDialogue) yield return new WaitForSeconds(0.05f);
+            if (canDialogue) yield return new WaitForSeconds(dialogueLetterDelay);
             else {
                 text.text = sentence;
                 Skip();

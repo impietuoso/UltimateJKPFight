@@ -48,9 +48,9 @@ MonoBehaviour:
   beginGame: 0
   inMenu: 0
   target: {fileID: 0}
-  rock: {fileID: -8855581891802079737, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
-  paper: {fileID: -1915164001886527139, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
-  scissors: {fileID: -7325493709182029996, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  rock: {fileID: 1671572311275046871, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  paper: {fileID: -8340341888819157381, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
+  scissors: {fileID: 9024312776807043790, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
   mistery: {fileID: -4523886409909841112, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
   rockG: {fileID: 1870815513581715332, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}
   paperG: {fileID: 5526215892063281418, guid: d8bf09c5618999849ad9b5e7b96571c5, type: 3}

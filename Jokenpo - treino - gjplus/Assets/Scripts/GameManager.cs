@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour
     public Sprite paperG;
     public Sprite scissorsG;
 
+    public string playerName;
+
     private void Awake() {
         instance = this;
     }
@@ -32,6 +35,10 @@ public class GameManager : MonoBehaviour
     private void Start() {
         if (target != null)
             AudioManager.instance.target = target;
+
+        if (PhotonNetwork.IsConnected) {
+            playerName = PlayerPrefs.GetString("playerName");
+        }
     }
 
     public void OpenOption() {

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7405333398286456372}
   - component: {fileID: 7405333398286456373}
   m_Layer: 0
-  m_Name: Bubble (1)
+  m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,9 +284,9 @@ MonoBehaviour:
   anim: {fileID: 7405333399758130078}
   maxLife: 90
   enemyDamage: 10
-  patter: 010000000300000001000000
+  patter: 010000000100000002000000
   attack: 000000000000000000000000
-  hiddenAttack: 000101
+  hiddenAttack: 010101
   bubbleSprite: {fileID: 7405333399020148426}
   hurtAudio: {fileID: 8300000, guid: 85adb16a8d5be4347b0dc639b9c411ae, type: 3}
   atkAudio: {fileID: 8300000, guid: 8788b25aba42d984f84b46d840b44f51, type: 3}

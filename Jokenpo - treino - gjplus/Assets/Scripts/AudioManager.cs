@@ -111,13 +111,15 @@ public class AudioManager : MonoBehaviour
 
     //Muda a musica que está tocando fazendo um fade
     public void FadeMusic(AudioClip music) {
+        StopCoroutine(FadeAudioIenumerator(music, musicTransitionTime));
         StartCoroutine(FadeAudioIenumerator(music, musicTransitionTime));
     }
 
     //Salva volume atual, fade out e fade in
     IEnumerator FadeAudioIenumerator(AudioClip music, float delayTime) {
 
-        float currentVolume = bgmAS.volume;
+        //float currentVolume = bgmAS.volume;
+        float currentVolume = bgmSlider.value / 10;
         float timeElapse = 0f;
 
         while (timeElapse < delayTime) {

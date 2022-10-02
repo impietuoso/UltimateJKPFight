@@ -119,7 +119,7 @@ MonoBehaviour:
   anim: {fileID: 8579615870860838751}
   maxLife: 60
   enemyDamage: 10
-  patter: 010000000200000002000000
+  patter: 020000000200000002000000
   attack: 000000000000000000000000
   hiddenAttack: 000001
   bubbleSprite: {fileID: 8579615871598795275}
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 8579615872743561973}
   - component: {fileID: 8579615872743561972}
   m_Layer: 0
-  m_Name: Bubble (1)
+  m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
