@@ -5,6 +5,7 @@ using Photon.Pun;
 using TMPro;
 using Photon.Realtime;
 using UnityEngine.UI;
+using ExitGames.Client.Photon;
 
 public class PhotonConnection : MonoBehaviourPunCallbacks
 {
@@ -18,6 +19,7 @@ public class PhotonConnection : MonoBehaviourPunCallbacks
     RoomOptions options = new RoomOptions();
 
     public void ConnectToPhotonServer() {
+        cancelButton.SetActive(true);
         if (!PhotonNetwork.IsConnected) {
             PhotonNetwork.ConnectUsingSettings();
             options.MaxPlayers = playerLimit;
@@ -32,6 +34,13 @@ public class PhotonConnection : MonoBehaviourPunCallbacks
         else {
             OnJoinedLobby();
         }
+    }
+
+    public override void OnCustomAuthenticationFailed(string debugMessage) {
+        Debug.Log("Fail");
+        base.OnCustomAuthenticationFailed(debugMessage);
+        Debug.Log(debugMessage);
+        cancelButton.SetActive(true);
     }
 
     public override void OnJoinedLobby() {
@@ -56,14 +65,12 @@ public class PhotonConnection : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom() {
         base.OnJoinedRoom();
-        Debug.Log("Joined Room");
         StartCoroutine(WaitPlayer());
     }
 
     public IEnumerator WaitPlayer() {
-        Debug.Log("Waiting For Players");
-        cancelButton.SetActive(true);
         AudioManager.instance.FadeMusic(fightMusic);
+        //cancelButton.SetActive(true);
         if (PhotonNetwork.CurrentRoom != null)
             yield return new WaitUntil(() => PhotonNetwork.CurrentRoom.PlayerCount >= playerLimit);
         PhotonNetwork.LoadLevel(4);
@@ -96,6 +103,5 @@ public class PhotonConnection : MonoBehaviourPunCallbacks
     public override void OnLeftLobby() {
         base.OnLeftLobby();
         PhotonNetwork.Disconnect();
-    }
-
+    }    
 }
