@@ -5,8 +5,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
-{
+public class GameManager : MonoBehaviourPunCallbacks {
+
     public static GameManager instance;
 
     public float MenuTransitionDuration;
@@ -117,6 +117,15 @@ public class GameManager : MonoBehaviour
         }
         CG.alpha = 0;
         yield return null;        
+    }
+
+    public void ExitMatch() {
+        PhotonNetwork.LeaveRoom();
+    }
+
+    public override void OnLeftRoom() {
+        base.OnLeftRoom();
+        LoadManager.instance.LoadScene(0);
     }
 
     public void QuitGame()
